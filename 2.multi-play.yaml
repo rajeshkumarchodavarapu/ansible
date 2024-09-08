@@ -1,6 +1,6 @@
-- name : play-1
+- name: play-1
   hosts: web
   tasks:
-  - name : play-1 task-1
+  - name: play-1 task-1
     ansible.builtin.debug:
-    msg : "this is from play-1 & task-1"
+    msg: "this is from play-1 & task-1"
