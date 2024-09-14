@@ -3,4 +3,4 @@
   tasks:
     - name: print the information
       ansible.builtin.debug:
-      msg: "Hi, I am learning ansible concept by variable"
+      msg : "Hi, I am learning ansible concept by variable"
