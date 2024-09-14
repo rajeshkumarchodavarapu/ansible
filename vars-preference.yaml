@@ -1,0 +1,4 @@
+- name: variable to print
+  hosts: web
+  vars:
+  course: "De"
