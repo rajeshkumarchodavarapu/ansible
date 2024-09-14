@@ -2,7 +2,7 @@
   hosts: web
   become: yes
   tasks:
-  - name: install ngnix
+  - name: dnf install ngnix
     ansible.builtin.package:
      name: ngnix
     state: present 
