@@ -2,18 +2,18 @@
   become: yes
   hosts: web
   tasks:
-   - name: print the status
-     ansible.builtin.debug:
+  - name: print the status
+    ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
-    
-    - name: install nginx if redhat
-      ansibile.builtin.dnf:
+  
+  - name: install nginx if redhat
+    ansible.builtin.dnf:
       name: nginx
       state: present
-      when: ansible_os_family == "RedHat"
-    
-    - name: install nginx if Debian
-      ansible.builtin.apt:
+    when: ansible_os_family == "RedHat"
+
+  - name: install nginx if Debian
+    ansible.builtin.apt:
       name: nginx
       state: present
-      when: ansible_os_family == "Debian"
+    when: ansible_os_family == "Debian"
