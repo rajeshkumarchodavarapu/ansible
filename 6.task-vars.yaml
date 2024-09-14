@@ -12,5 +12,5 @@
   - name: "print the information again"
     vars:
     course: "Ansible"
-  ansible.builtin.debug:
-    msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
+    ansible.builtin.debug:
+      msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
