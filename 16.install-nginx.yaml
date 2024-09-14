@@ -4,17 +4,16 @@
   tasks:
    - name: print the status
      ansible.builtin.debug:
-      msg: "{{ansible_facts}}"
+      msg: "{{ ansible_facts }}"
     
-    - name: install nginx if RedHat
-      ansibile.builtin.dnf:
+  - name: install nginx if RedHat
+    ansibile.builtin.dnf:
+      name: nginx
+      state: present
+    when: ansible_os_family == "RedHat"
+    
+  - name: install nginx if Debian
+    ansible.builtin.apt:
         name: nginx
         state: present
-      when: ansible_os_family == "RedHat"
-    
-    - name: install nginx if Debian
-      ansible.builtin.apt:
-        name: nginx
-        state: present
-      when: ansible_os_family == "Debian"
-      
+    when: ansible_os_family == "Debian"
