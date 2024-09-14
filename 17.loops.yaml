@@ -4,11 +4,11 @@
   tasks:
   - name: print names
     ansible.buitin.debug:
-    msg: "hello rajesh"
-  loops:
-    - rajesh
-    - satish
-    - anand
-    - vishnu
-    - sachin
-    - madhu
+     msg: "hello rajesh"
+    loops:
+      - rajesh
+      - satish
+      - anand
+      - vishnu
+      - sachin
+      - madhu
