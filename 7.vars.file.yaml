@@ -4,5 +4,5 @@
   - vars.yaml
   tasks:
   - name: print the information
-  ansible.builtin.deubug:
-    msg: 'Hi, I am printing the information of course={{course}}, duration={{duration}}, trainer={{trainer}}'
+    ansible.builtin.deubug:
+      msg: 'Hi, I am printing the information of course={{course}}, duration={{duration}}, trainer={{trainer}}'
