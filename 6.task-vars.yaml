@@ -9,9 +9,8 @@
     ansible.builtin.debug:
       msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
 
-- name: "print the information again"
-  vars:
+  - name: "print the information again"
+    vars:
     course: "Ansible"
-  tasks:
-    ansible.builtin.debug:
-      msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
+  ansible.builtin.debug:
+    msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
