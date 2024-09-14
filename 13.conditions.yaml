@@ -7,10 +7,10 @@
       private: false
   tasks:
     - name: print the number if less than 10
-      ansible.builtin.debug
+      ansible.builtin.debug:
         msg: "given number {{my_number}} is less than 10"
       when: my_number | init < 10
     - name: print the number if greater than 10
-      ansible.builtin.debug
+      ansible.builtin.debug:
         msg: "given number {{my_number}} is greater than 10"
       when: my_number | init >= 10
