@@ -9,5 +9,5 @@
   - name: convert to uppercase
     vars:
       greetings: "hello rajesh"
-      ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{ greeting | upper }}"
