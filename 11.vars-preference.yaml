@@ -1,15 +1,15 @@
 - name: variable to print
   hosts: web
-  vars:
-    course: "Devops with aws"
-    duration: "12 hr"
-    trainer: "god"
-    vars_files:
-  - vars.yaml
-  vars_prompt:
-  - name: course
-    prompt: please enter the course name
-    private: false
+  # vars:
+  #   course: "Devops with aws"
+  #   duration: "12 hr"
+  #   trainer: "god"
+  #   vars_files:
+  # - vars.yaml
+  # vars_prompt:
+  # - name: course
+  #   prompt: please enter the course name
+  #   private: false
   tasks:
   - name: print the information
     vars:
