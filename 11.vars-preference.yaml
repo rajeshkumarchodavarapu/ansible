@@ -1,10 +1,10 @@
 - name: variable to print
   hosts: web
   vars:
-  course: "Devops with aws"
-  duration: "12 hr"
-  trainer: "god"
-  vars_files:
+    course: "Devops with aws"
+    duration: "12 hr"
+    trainer: "god"
+    vars_files:
   - vars.yaml
   vars_prompt:
   - name: course
@@ -18,4 +18,3 @@
     trainer: "rajesh"
     ansible.builtin.debug:
       msg: "hi, i am learning {{course}} with duratio is {{duration}} and trainer is {{trainer}}"
-      
