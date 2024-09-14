@@ -7,4 +7,11 @@
   tasks:
   - name: "print the information"
     ansible.builtin.debug:
-      msg: "Hello, I am learnin course is:{{ course }}, Duration is :{{ Duration }}, Trainer is :{{ Trainer }}"
+      msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
+
+- name: print the information again
+  vars:
+    course: "Ansible"
+  tasks:
+    ansible.builtin.debug:
+      msg: "Hello, I am learning course={{ course }}, Duration={{ Duration }}, Trainer={{ Trainer }}"
