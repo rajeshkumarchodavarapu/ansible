@@ -20,6 +20,6 @@
       - s3
       - ec2
   tasks:
-    - name: print the course info
-      ansible.builtin.debug:
-       msg: "Hi, i am learning {{course}} with duration is {{duration}} and tops are {{topics}}, live is {{live}}, tools are {{tools}}"
+  - name: print the course info
+    ansible.builtin.debug:
+      msg: "Hi, i am learning {{course}} with duration is {{duration}} and tops are {{topics}}, live is {{live}}, tools are {{tools}}"
