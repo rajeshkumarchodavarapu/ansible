@@ -3,12 +3,13 @@
   connection: local
   tasks:
   - name: print names
-    ansible.buitin.debug:
-     msg: "hello rajesh"
-    loops:
+    ansible.builtin.debug:
+      msg: "Hello {{ item }} "
+    loop:
     - rajesh
     - satish
-    - anand
+    - karthik
     - vishnu
-    - sachin
-    - madhu
+    - gopi
+    - venu 
+    - anand
