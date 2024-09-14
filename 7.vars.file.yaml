@@ -3,6 +3,6 @@
   vars_files:
   - vars.yaml
   tasks:
-    - name: "print the vars file information"
-      ansible.builtin.deubug:
-        msg: 'Hi, I am printing the information of course={{course}}, duration={{duration}}, trainer={{trainer}}'
+  - name: "print the information"
+    ansible.builtin.deubug:
+      msg: 'Hi, I am printing the information of course={{course}}, duration={{duration}}, trainer={{trainer}}'
