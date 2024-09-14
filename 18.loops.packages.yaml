@@ -1,0 +1,13 @@
+- name: packages installing using loops concept
+  hosts: local
+  become: yes
+  connection: local
+  tasks:
+  - name: print names
+    ansible.builtin.package:
+      msg: "{{ item }} "
+    loop:
+    - msql
+    - nginx
+    - postfix
+    - httpd
