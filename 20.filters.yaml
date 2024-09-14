@@ -37,7 +37,7 @@
         duration: "2hrs"
         trainer: "rajesh"
     ansible.buitin.debug:
-      msg: "{{course | dict2items}}"
+      msg: "{{ course | dict2items }}"
     
   - name: convert list to map
     vars:
